@@ -1,0 +1,27 @@
+/* hafsa part */
+/* services page */
+* {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    background-color: rgba(88, 87, 87, 0.108);
+    padding-top: 3vh;
+    padding-left: 8vw;
+    padding-bottom: 3vh;
+    font-size: 15px;
+}
+.head > div > a {
+    text-decoration: none;
+    color: orange;
+  
+}
+.inside-head {
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+}
+.inside-head2 {
+    padding-top: 1vh;
+    color: rgb(76, 75, 75);
+}
