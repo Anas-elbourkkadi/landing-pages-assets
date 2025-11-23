@@ -114,8 +114,8 @@
     font-size: 17px;
 }
 
-/* ===== code hafsa======*/
-   
+
+
 /*========== i start navbar top for web site========= */
 .container-parent{
     display: flex;
@@ -742,7 +742,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
     background-color: rgba(236, 124, 107, 0.945) ;
 }
-/*finished about page*/
+/*finished contact page*/
 
 /*========== services mobile hafsa========= */
 @media (max-width: 480px) {
