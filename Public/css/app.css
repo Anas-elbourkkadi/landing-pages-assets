@@ -25,3 +25,54 @@
     padding-top: 1vh;
     color: rgb(76, 75, 75);
 }
+
+/* Omar Part */
+/* About Page */
+
+
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+}
+
+.right img{
+    width: 100vh;
+    padding: 80px 50px;
+}
+
+.left{
+    background-color: red;
+    padding-bottom: 15vh;
+    padding-left: 100px;
+}
+
+
+.left h2 , p ,li{
+   padding-left: 35px;
+   padding-bottom: 20px;
+
+}
+
+.list i{
+    color: rgb(232,107,87);
+}
+
+.list li
+
+ li{
+
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
+}
+
+
+ul {
+    list-style: none;
+    padding:0 ;
+    margin-left: 0;
+}
