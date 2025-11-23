@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*========== i start navbar top for web site========= */
+.container-parent{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8vw;
+    background-color: #3c3c3c;
+    padding-block: 1vh;
+}
+.child1 i{
+   color: #e96b56;
+}
+.child1 a{
+    margin-left:3px;
+}
+.child1 span{
+    color: #f9f9f9;
+    margin-left:3px;
+    text-transform: capitalize;
+}
+.child1{
+    display: flex;
+    gap: 5vw;
+}
+.child2{
+    display: flex;
+    gap: 1vw;
+}
+.child2 i{
+    color:#ababab;
+}
+.child1 .email:hover,.child2 i:hover, .list a:hover{
+    color: #e96b56;
+    cursor: pointer;
+}
+.child1 .email:hover{
+    text-decoration: underline;
+}
+/* ========finish nabvar top for web site========== */
+    /*=============== i start the sconde navbar in web site====== */
+
+.sconde_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8vw;
+    padding-block: 2vh;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+}
+.logo{
+    border-left: 1vw solid #e96b56;
+    padding-inline-start: 1vw;
+    color: #545454;
+    text-transform: uppercase;
+}
+.list{
+    display: flex;
+    align-items: flex-end;
+    gap:5vw;
+}
+.list li{
+    list-style-type: none;
+}
+.list a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #545454;
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.container-parent2{
+    display: flex;
+}
+#menu,label[for="menu"]{
+    display: none;
+}
+    /*=============== finish the sconde navbar in web site====== */
+
+
+
+@media screen and (max-width:480px){
+/*========== i start navbar top for web site========= */
+    .child2{
+        display: none;
+    }
+    .container-parent{
+        justify-content: center;
+        padding-inline: 2vw;
+        font-size: small;
+    }
+/* ========finish nabvar top for mobile========== */
+    
+
+    .list{
+        display: none;
+    }
+    .logo{
+        border-left-width: 2vw ;
+        padding-inline-start: 2vw;
+    }
+    .sconde_navbar{
+        padding-inline: 4vw;
+    }
+    label[for="menu"] {
+        display: flex;
+        width: 40px;
+    }
+    #menu:checked~.list{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: 70px;
+        right: 5vw;
+        background-color: #ffffff;
+        width: 90%;
+        height: 100vh;
+        padding-block: 2vh;
+        gap: 5vh;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+    /*=============== finish the sconde navbar in mobile====== */
+    
+
+    
+}
