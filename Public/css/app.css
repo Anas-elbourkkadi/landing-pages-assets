@@ -239,6 +239,62 @@
     color: white;
 }
     /*=========== i finish the slide in the vrsion website in page home ====== */
+/*================== i start on the cards in page homer========= */
+
+.containercard svg{
+    width: 30px;
+    fill: #e96b56;
+}
+.containercard{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
+    min-height: 200px;
+    padding-inline-start: 1vw; 
+    padding-block-start: 7vh;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+.containercard::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #e96b56;
+    z-index: -1;
+    transition: 0.5s;
+}
+.containercard:hover::before{
+    height: 100%;
+}
+.containercard p{
+    width: 80%;
+}
+.containercard h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.grandparent2{
+    margin-block: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-inline: 10vw;
+    gap: 2vw;
+
+}
+
+.containercard:hover svg,.containercard:hover{
+    fill: white;
+    color: white;
+} 
+    /* ==== i finish make it the cards in page home in website ==== */
 
 
 
@@ -295,6 +351,16 @@
         bottom: 50px;
     }
     /*=========== i finish the slide in the vrsion mobile ====== */
+    /* ==== i start make it the cards in page home in mobile ==== */
+    .grandparent2{
+        grid-template-columns: 1fr;
+        gap: 2vh;
+    }
+    .containercard{
+        padding-block-start: 4vh;
+    }
+    /* ==== i finish make it the cards in page home in mobile ==== */
+
 }
 
 
