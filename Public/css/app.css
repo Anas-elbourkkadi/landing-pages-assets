@@ -50,8 +50,7 @@
     text-align: center;
     border: rgba(128, 128, 128, 0.481) solid 1px;
     border-radius: 5px;
-    color: rgb(85,84,85);
-    
+    color: rgb(85,84,85);    
 }
 .div1 >.box1 {
     background-color: rgb(232,107,87);
@@ -84,8 +83,31 @@
 }
 .box1 svg {
     fill: white;
-    transition: fill 0.7s ease-in-out ; /**/
+    transition: fill 0.7s ease-in-out ; 
 }
 .div1:hover > .box1 svg {
     fill: rgb(233,107,86);
+}
+.skills {
+    align-items: center;
+    color: rgb(85,84,85);
+}
+.skills > .h2 {
+    padding-bottom: 1.5vh;
+    position: relative;
+    padding-bottom: 3vh;
+    /* border-bottom:rgb(233,107,86) solid 5px ; */
+}
+.skills > .h2::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(232, 107, 87);
+    bottom: 0;
+    left: 40%;/*madertch 50% hit in all cases howa majaych lwst */
+    width: 40%;/*tolo*/
+    height: 3px;/*somk syalo*/
+    transform: translate(-18%);/* ghi ktn9s mn l lbdya dylo 18%*/
+}
+.skills p {
+    font-size: 17px;
 }
