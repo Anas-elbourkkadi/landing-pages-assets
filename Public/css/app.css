@@ -128,13 +128,14 @@
     width: 700px;
     height: 450px;
 }
+/* progress things hhh*/
 .items1 {
     display: flex;
     justify-content: space-between;
 }
 .progress-bar {
-        background-color: rgb(232, 107, 87) !important;
-        border-radius: 0px;
+    background-color: rgb(232, 107, 87) !important;
+    border-radius: 0px;
 }
 .progress {
     height: 8px !important;
@@ -144,6 +145,22 @@
     display: flex;
     flex-direction: column;
     gap: 3vh;
+}
+/*hafsa*/
+/*contact page*/
+.hero2 {
+    display: flex;
+    gap: 3vw;
+    text-align: center;
+    padding-inline: 19vw;
+    padding-top: 6vh;
+}
+.add {
+    padding: 3vh 10vw;
+    border: none;
+    /* width: 55%; */
+    /* padding-inline: 5vw; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
 }
 @media (max-width: 480px) {
 #hfs > .hero {
