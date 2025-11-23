@@ -275,7 +275,7 @@
     height: 100%;
 }
 .containercard p{
-    width: 80%;
+    width: 70%;
 }
 .containercard h3{
     font-size: 20px;
@@ -285,7 +285,7 @@
     margin-block: 5vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding-inline: 10vw;
+    padding-inline: 6vw;
     gap: 2vw;
 
 }
@@ -295,6 +295,41 @@
     color: white;
 } 
     /* ==== i finish make it the cards in page home in website ==== */
+
+    /* ==============i start in the section three in page home======= */
+
+.line2 svg{
+    width: 25px;
+    margin-bottom: 2vh;
+    fill: #d9534f;
+}
+.line2{
+    padding-inline-start: 1vw;
+}
+.grandparent3{
+    display: flex;
+    padding-inline: 6vw;
+    gap: 2vw;
+    margin-block: 4vh;
+}
+.containertext{
+    width: 90%;
+}
+
+.containerimg img{
+    width: 100%;
+}
+.line1 p{
+    color: #cecece;
+
+}
+.line1 h2 {
+    color: #545454;
+}
+.line2 p, .sentence{
+    color: #464646;
+}
+    /* ==== i finish  section three in website ===== */
 
 
 
@@ -362,6 +397,12 @@
         padding-inline-start: 4vw;
     }
     /* ==== i finish make it the cards in page home in mobile ==== */
+    /* ==== i start section three in mobile ===== */
+    .grandparent3{
+        flex-direction: column-reverse;
+        gap: 2vh;
+    }
+    /* ==== i finish section three in mobile ===== */
 
 }
 
