@@ -553,13 +553,8 @@ body {
     flex-direction: column;
     gap: 3vh;
 }
-<<<<<<< HEAD
-
-#hfs>.hero {
-=======
 /*========== services page hafsaa :) ========= */
 #hfs > .hero {
->>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
     /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -675,11 +670,7 @@ body {
     width: 700px;
     height: 450px;
 }
-<<<<<<< HEAD
-
-=======
 /* progress things hhh*/
->>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
 .items1 {
     display: flex;
     justify-content: space-between;
@@ -700,9 +691,6 @@ body {
     flex-direction: column;
     gap: 3vh;
 }
-<<<<<<< HEAD
-
-=======
 /*finished services page :)*/
 
 /*========== contact page hafsa :)========= */
@@ -804,7 +792,6 @@ body {
 /*finished contact page*/
 
 /*========== services mobile hafsa========= */
->>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
 @media (max-width: 480px) {
     #hfs>.hero {
         display: flex;
@@ -947,8 +934,12 @@ text-align: center;
 
 .ppa{
     padding-top: 2vw;
+    
 }
 
+.carousel-item{
+    height: 150px !important;
+}
 
 .testimonials{
     padding-top: 5vw;
@@ -958,7 +949,29 @@ text-align: center;
     padding-top: 5vw;
 }
 
-.conto{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.271);
-    padding: 2vh 3vw;
+.conto {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.196);
+    padding: 1vw 3vh;
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 
+  
 }
+
+@keyframes slideUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.conto:nth-child(1) { animation-delay: 0.1s; }
+.conto:nth-child(2) { animation-delay: 0.2s; }
+.conto:nth-child(3) { animation-delay: 0.3s; }
+.conto:nth-child(4) { animation-delay: 0.4s; }
+.conto:nth-child(5) { animation-delay: 0.5s; }
+
