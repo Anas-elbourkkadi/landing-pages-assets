@@ -1,4 +1,5 @@
 
+
 /* hafsa part */
 /* services page */
 * {
@@ -112,13 +113,9 @@
 .skills p {
     font-size: 17px;
 }
-/* =====code hafsa==== */
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
+/* ===== code hafas ======*/
+   
 /*========== i start navbar top for web site========= */
 .container-parent{
     display: flex;
