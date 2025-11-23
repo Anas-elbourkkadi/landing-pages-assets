@@ -114,8 +114,8 @@
     font-size: 17px;
 }
 
-/* ===== code hafas ======*/
-   
+
+
 /*========== i start navbar top for web site========= */
 .container-parent{
     display: flex;
@@ -198,6 +198,138 @@
     display: none;
 }
     /*=============== finish the sconde navbar in web site====== */
+    /*=========== i start the slide in the vrsion website ====== */
+
+.carousel-item{
+    height: 500px; 
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.5;
+}
+.carousel-caption {
+    bottom: 100px;
+}
+.carousel-caption p,.change{
+    text-align: start;
+}
+
+.carousel-caption h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #6b6b6b;
+    margin-bottom: 5vh;
+}
+.change{
+    width: 75%;
+}
+.carousel-caption h2 span{
+    color: #e96b56;
+}
+.carousel-caption .btn{
+    background-color: #e96b56;
+    padding-block: 2vh;
+    color: white;
+}
+    /*=========== i finish the slide in the vrsion website in page home ====== */
+/*================== i start on the cards in page homer========= */
+
+.containercard svg{
+    width: 30px;
+    fill: #e96b56;
+}
+.containercard{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
+    min-height: 200px;
+    padding-inline-start: 1vw; 
+    padding-block-start: 7vh;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+    overflow: hidden;
+}
+.containercard::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #e96b56;
+    z-index: -1;
+    transition: 0.5s;
+}
+.containercard:hover::before{
+    height: 100%;
+}
+.containercard p{
+    width: 70%;
+}
+.containercard h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.grandparent2{
+    margin-block: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-inline: 6vw;
+    gap: 2vw;
+
+}
+
+.containercard:hover svg,.containercard:hover{
+    fill: white;
+    color: white;
+} 
+    /* ==== i finish make it the cards in page home in website ==== */
+
+    /* ==============i start in the section three in page home======= */
+
+.line2 svg{
+    width: 25px;
+    margin-bottom: 2vh;
+    fill: #d9534f;
+}
+.line2{
+    padding-inline-start: 1vw;
+}
+.grandparent3{
+    display: flex;
+    padding-inline: 6vw;
+    gap: 2vw;
+    margin-block: 4vh;
+}
+.containertext{
+    width: 90%;
+}
+
+.containerimg img{
+    width: 100%;
+}
+.line1 p{
+    color: #cecece;
+
+}
+.line1 h2 {
+    color: #545454;
+}
+.line2 p, .sentence{
+    color: #464646;
+}
+    /* ==== i finish  section three in website ===== */
 
 
 
@@ -244,11 +376,36 @@
         z-index: 999;
     }
     /*=============== finish the sconde navbar in mobile====== */
-    
+    .carousel-item img{
+        height: 900px;
+    }   
+    .carousel-item .btn{
+        padding-block: 1vh;
+    }
+    .carousel-caption{
+        bottom: 50px;
+    }
+    /*=========== i finish the slide in the vrsion mobile ====== */
+    /* ==== i start make it the cards in page home in mobile ==== */
+    .grandparent2{
+        grid-template-columns: 1fr;
+        gap: 2vh;
+        padding-inline: 5vw;
+    }
+    .containercard{
+        padding-block-start: 4vh;
+        padding-inline-start: 4vw;
+    }
+    /* ==== i finish make it the cards in page home in mobile ==== */
+    /* ==== i start section three in mobile ===== */
+    .grandparent3{
+        flex-direction: column-reverse;
+        gap: 2vh;
+    }
+    /* ==== i finish section three in mobile ===== */
 
-    
 }
-/* hafsa part */
+/*========== hafsa part again========= */
 /* services page */
 * {
     margin: 0;
@@ -391,16 +548,18 @@ body {
     object-fit: cover;
 }
 
-
-
-
 .first {
     display: flex;
     flex-direction: column;
     gap: 3vh;
 }
+<<<<<<< HEAD
 
 #hfs>.hero {
+=======
+/*========== services page hafsaa :) ========= */
+#hfs > .hero {
+>>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
     /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -516,7 +675,11 @@ body {
     width: 700px;
     height: 450px;
 }
+<<<<<<< HEAD
 
+=======
+/* progress things hhh*/
+>>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
 .items1 {
     display: flex;
     justify-content: space-between;
@@ -537,7 +700,111 @@ body {
     flex-direction: column;
     gap: 3vh;
 }
+<<<<<<< HEAD
 
+=======
+/*finished services page :)*/
+
+/*========== contact page hafsa :)========= */
+/*contact page*/
+.hero2 {
+    display: flex;
+    gap: 3vw;
+    text-align: center;
+    padding-inline: 2vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-inline: 9vw;
+}
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 80vw;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    gap: 1.4vh;
+}
+.call {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 20vw;
+    align-items: center;
+}
+.svh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4vw;
+    padding-top: 2vh ;
+    padding-bottom: 2vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: rgb(232,107,87) dotted 2px;
+}
+.lasth {
+    display: flex;
+    padding: 3vh 9vw;
+    gap: 2vw;
+}
+.formh {
+    gap: 4vh;
+    padding: 4vh 3vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+}
+.your {
+    display: flex;
+    justify-content: space-between;
+}
+.your input {
+    width: 48%;
+    padding: 1vh;
+    outline: none;
+}
+#sub > input {
+    width: 100%;
+    padding: 1vh;
+    outline: none;
+}
+.message-boxh {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vh;
+}
+.formh input:focus {
+    border: #d9534f dotted 2px;
+}
+.message-boxh > .msgh {
+    height: 25vh;
+    padding-bottom: 17vh;
+    padding-left: 0.5vw;
+    outline: none;
+}
+.div-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnh {
+    padding: 1vh 1.5vw;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(236,124,107);
+}
+.btnh:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    background-color: rgba(236, 124, 107, 0.945) ;
+}
+/*finished contact page*/
+
+/*========== services mobile hafsa========= */
+>>>>>>> 22702e618a85af4fa2de66b0e7cacd5febaaba32
 @media (max-width: 480px) {
     #hfs>.hero {
         display: flex;
