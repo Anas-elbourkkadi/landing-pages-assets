@@ -134,6 +134,8 @@
 
 /* ===== code hafas ======*/
 
+/* ===== code hafsa======*/
+   
 /*========== i start navbar top for web site========= */
 header {
     position: fixed;
@@ -543,14 +545,7 @@ label[for="menu"] {
     /* ==== i finish section three in mobile ===== */
 
 }
-
-
-
-
-
-
-
-/* hafsa part */
+/*========== hafsa part again========= */
 /* services page */
 * {
     margin: 0;
@@ -671,9 +666,6 @@ body {
     object-fit: cover;
 }
 
-
-
-
 .first {
     display: flex;
     flex-direction: column;
@@ -681,6 +673,8 @@ body {
 }
 
 #hfs>.hero {
+/*========== services page hafsaa :) ========= */
+#hfs > .hero {
     /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -797,6 +791,7 @@ body {
     height: 450px;
 }
 
+/* progress things hhh*/
 .items1 {
     display: flex;
     justify-content: space-between;
@@ -818,6 +813,107 @@ body {
     gap: 3vh;
 }
 
+/*finished services page :)*/
+
+/*========== contact page hafsa :)========= */
+/*contact page*/
+.hero2 {
+    display: flex;
+    gap: 3vw;
+    text-align: center;
+    padding-inline: 2vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-inline: 9vw;
+}
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 80vw;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    gap: 1.4vh;
+}
+.call {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 20vw;
+    align-items: center;
+}
+.svh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4vw;
+    padding-top: 2vh ;
+    padding-bottom: 2vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: rgb(232,107,87) dotted 2px;
+}
+.lasth {
+    display: flex;
+    padding: 3vh 9vw;
+    gap: 2vw;
+}
+.formh {
+    gap: 4vh;
+    padding: 4vh 3vw;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+}
+.your {
+    display: flex;
+    justify-content: space-between;
+}
+.your input {
+    width: 48%;
+    padding: 1vh;
+    outline: none;
+}
+#sub > input {
+    width: 100%;
+    padding: 1vh;
+    outline: none;
+}
+.message-boxh {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vh;
+}
+.formh input:focus {
+    border: #d9534f dotted 2px;
+}
+.message-boxh > .msgh {
+    height: 25vh;
+    padding-bottom: 17vh;
+    padding-left: 0.5vw;
+    outline: none;
+}
+.div-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnh {
+    padding: 1vh 1.5vw;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(236,124,107);
+}
+.btnh:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
+    background-color: rgba(236, 124, 107, 0.945) ;
+}
+/*finished about page*/
+
+/*========== services mobile hafsa========= */
 @media (max-width: 480px) {
     #hfs>.hero {
         display: flex;
