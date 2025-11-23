@@ -198,6 +198,47 @@
     display: none;
 }
     /*=============== finish the sconde navbar in web site====== */
+    /*=========== i start the slide in the vrsion website ====== */
+
+.carousel-item{
+    height: 500px; 
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0.5;
+}
+.carousel-caption {
+    bottom: 100px;
+}
+.carousel-caption p,.change{
+    text-align: start;
+}
+
+.carousel-caption h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #6b6b6b;
+    margin-bottom: 5vh;
+}
+.change{
+    width: 75%;
+}
+.carousel-caption h2 span{
+    color: #e96b56;
+}
+.carousel-caption .btn{
+    background-color: #e96b56;
+    padding-block: 2vh;
+    color: white;
+}
+    /*=========== i finish the slide in the vrsion website in page home ====== */
 
 
 
@@ -244,10 +285,24 @@
         z-index: 999;
     }
     /*=============== finish the sconde navbar in mobile====== */
-    
-
-    
+    .carousel-item img{
+        height: 900px;
+    }   
+    .carousel-item .btn{
+        padding-block: 1vh;
+    }
+    .carousel-caption{
+        bottom: 50px;
+    }
+    /*=========== i finish the slide in the vrsion mobile ====== */
 }
+
+
+
+
+
+
+
 /* hafsa part */
 /* services page */
 * {
