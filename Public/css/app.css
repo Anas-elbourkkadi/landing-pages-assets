@@ -123,7 +123,6 @@
     display: flex;
     padding: 4vh 6vw;
     gap: 2vw;
-
 }
 .im8 {
     width: 700px;
@@ -145,4 +144,28 @@
     display: flex;
     flex-direction: column;
     gap: 3vh;
+}
+@media (max-width: 480px) {
+#hfs > .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding-top: 9vh;
+    padding-inline: 6vw;
+    padding-bottom: 9vh;
+    }
+.skills {
+    text-align: center;
+}
+.last8 {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 6vw;
+    gap: 2vw;
+    font-size: small;
+}
+.im8 {
+    width: 100%;
+    height: 300px;
+}
 }
