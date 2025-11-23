@@ -114,7 +114,7 @@
     font-size: 17px;
 }
 
-/* ===== code hafas ======*/
+/* ===== code hafsa======*/
    
 /*========== i start navbar top for web site========= */
 .container-parent{
@@ -248,7 +248,7 @@
 
     
 }
-/* hafsa part */
+/*========== hafsa part again========= */
 /* services page */
 * {
     margin: 0;
@@ -370,6 +370,7 @@ body {
     flex-direction: column;
     gap: 3vh;
 }
+/*========== services page hafsaa :) ========= */
 #hfs > .hero {
     /* background-color: aqua; */
     display: grid;
@@ -486,7 +487,9 @@ body {
     flex-direction: column;
     gap: 3vh;
 }
-/*hafsa*/
+/*finished services page :)*/
+
+/*========== contact page hafsa :)========= */
 /*contact page*/
 .hero2 {
     display: flex;
@@ -582,7 +585,9 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.148);
     background-color: rgba(236, 124, 107, 0.945) ;
 }
+/*finished about page*/
 
+/*========== services mobile hafsa========= */
 @media (max-width: 480px) {
 #hfs > .hero {
     display: flex;
