@@ -29,52 +29,95 @@
 /* Omar Part */
 /* About Page */
 
-
-
-.list{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: blue;
+* {
+  box-sizing: border-box;
 }
 
-.right img{
-    width: 100vh;
-    padding: 80px 50px;
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-.left{
-    background-color: red;
-    padding-bottom: 15vh;
-    padding-left: 100px;
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-
-.left h2 , p ,li{
-   padding-left: 35px;
-   padding-bottom: 20px;
-
+.about-content {
+  width: 55%;
 }
 
-.list i{
-    color: rgb(232,107,87);
+.about-content h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
-.list li
+.lead {
+  margin: 0 0 18px 0;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
 
- li{
-
+.check-list {
   list-style: none;
-  padding-left: 0;
-  margin-left: 0;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
 
+.check-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 8px 0;
+  line-height: 1.7;
+}
+
+.check-icon {
+  flex: 0 0 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.check-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.stroke {
+  fill: none;
+  stroke: #d9534f;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fill {
+  fill: #d9534f;
+  opacity: 0.07;
+}
+
+.check-text {
+  flex: 1;
+  margin: 0;
+}
+
+.about-image img {
+  width: 500px;
+  object-fit: cover;
 }
 
 
-ul {
-    list-style: none;
-    padding:0 ;
-    margin-left: 0;
+
+
 .first {
     display: flex;
     flex-direction: column;
