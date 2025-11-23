@@ -355,9 +355,11 @@
     .grandparent2{
         grid-template-columns: 1fr;
         gap: 2vh;
+        padding-inline: 5vw;
     }
     .containercard{
         padding-block-start: 4vh;
+        padding-inline-start: 4vw;
     }
     /* ==== i finish make it the cards in page home in mobile ==== */
 
