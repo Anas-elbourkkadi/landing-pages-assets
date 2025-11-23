@@ -1,3 +1,5 @@
+
+
 /* hafsa part */
 /* services page */
 * {
@@ -25,6 +27,347 @@
     padding-top: 1vh;
     color: rgb(76, 75, 75);
 }
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#hfs > .hero {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2vw;
+    padding-top: 9vh;
+    padding-inline: 8vw;
+    padding-bottom: 9vh;
+}
+.hero > .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 2vw;
+    /* background-color: red; */
+    gap: 3vh;
+    padding: 7vh 2vw;
+    text-align: center;
+    border: rgba(128, 128, 128, 0.481) solid 1px;
+    border-radius: 5px;
+    color: rgb(85,84,85);    
+}
+.div1 >.box1 {
+    background-color: rgb(232,107,87);
+    padding: 2.3vh 1.3vw;
+    border-radius: 5px;
+    position: relative;
+}
+.box1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    width: 105%;
+    height: 110%;
+    background-color: rgba(232, 107, 87, 0.15);
+    border-radius: 12px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.div1:hover {
+    background-color: rgb(233,107,86);
+    transition: color 1s ease-in-out ;
+}
+.div1:hover > .box1 {
+    background-color: white;
+    transition: color 1s  ease-in-out ;
+    
+}
+.box1 svg {
+    fill: white;
+    transition: fill 0.7s ease-in-out ; 
+}
+.div1:hover > .box1 svg {
+    fill: rgb(233,107,86);
+}
+.skills {
+    align-items: center;
+    color: rgb(85,84,85);
+}
+.skills > .h2 {
+    padding-bottom: 1.5vh;
+    position: relative;
+    padding-bottom: 3vh;
+    /* border-bottom:rgb(233,107,86) solid 5px ; */
+}
+.skills > .h2::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(232, 107, 87);
+    bottom: 0;
+    left: 40%;/*madertch 50% hit in all cases howa majaych lwst */
+    width: 40%;/*tolo*/
+    height: 3px;/*somk syalo*/
+    transform: translate(-18%);/* ghi ktn9s mn l lbdya dylo 18%*/
+}
+.skills p {
+    font-size: 17px;
+}
+
+/* ===== code hafas ======*/
+   
+/*========== i start navbar top for web site========= */
+.container-parent{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8vw;
+    background-color: #3c3c3c;
+    padding-block: 1vh;
+}
+.child1 i{
+   color: #e96b56;
+}
+.child1 a{
+    margin-left:3px;
+}
+.child1 span{
+    color: #f9f9f9;
+    margin-left:3px;
+    text-transform: capitalize;
+}
+.child1{
+    display: flex;
+    gap: 5vw;
+}
+.child2{
+    display: flex;
+    gap: 1vw;
+}
+.child2 i{
+    color:#ababab;
+}
+.child1 .email:hover,.child2 i:hover, .list a:hover{
+    color: #e96b56;
+    cursor: pointer;
+}
+.child1 .email:hover{
+    text-decoration: underline;
+}
+/* ========finish nabvar top for web site========== */
+    /*=============== i start the sconde navbar in web site====== */
+
+.sconde_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 8vw;
+    padding-block: 2vh;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+}
+.logo{
+    border-left: 1vw solid #e96b56;
+    padding-inline-start: 1vw;
+    color: #545454;
+    text-transform: uppercase;
+}
+.list{
+    display: flex;
+    align-items: flex-end;
+    gap:5vw;
+}
+.list li{
+    list-style-type: none;
+}
+.list a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #545454;
+
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.container-parent2{
+    display: flex;
+}
+#menu,label[for="menu"]{
+    display: none;
+}
+    /*=============== finish the sconde navbar in web site====== */
+
+
+
+@media screen and (max-width:480px){
+/*========== i start navbar top for web site========= */
+    .child2{
+        display: none;
+    }
+    .container-parent{
+        justify-content: center;
+        padding-inline: 2vw;
+        font-size: small;
+    }
+/* ========finish nabvar top for mobile========== */
+    
+
+    .list{
+        display: none;
+    }
+    .logo{
+        border-left-width: 2vw ;
+        padding-inline-start: 2vw;
+    }
+    .sconde_navbar{
+        padding-inline: 4vw;
+    }
+    label[for="menu"] {
+        display: flex;
+        width: 40px;
+    }
+    #menu:checked~.list{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: 70px;
+        right: 5vw;
+        background-color: #ffffff;
+        width: 90%;
+        height: 100vh;
+        padding-block: 2vh;
+        gap: 5vh;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+    /*=============== finish the sconde navbar in mobile====== */
+    
+
+    
+}
+/* hafsa part */
+/* services page */
+* {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    background-color: rgba(88, 87, 87, 0.108);
+    padding-top: 3vh;
+    padding-left: 8vw;
+    padding-bottom: 3vh;
+    font-size: 15px;
+}
+.head > div > a {
+    text-decoration: none;
+    color: rgb(233,107,86);
+  
+}
+.inside-head {
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+}
+.inside-head2 {
+    padding-top: 1vh;
+    color: rgb(76, 75, 75);
+}
+
+/* Omar Part */
+/* About Page */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-content {
+  width: 55%;
+}
+
+.about-content h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.lead {
+  margin: 0 0 18px 0;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.check-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 8px 0;
+  line-height: 1.7;
+}
+
+.check-icon {
+  flex: 0 0 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.check-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.stroke {
+  fill: none;
+  stroke: #d9534f;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fill {
+  fill: #d9534f;
+  opacity: 0.07;
+}
+
+.check-text {
+  flex: 1;
+  margin: 0;
+}
+
+.about-image img {
+  width: 500px;
+  object-fit: cover;
+}
+
+
+
+
 .first {
     display: flex;
     flex-direction: column;
