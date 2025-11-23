@@ -13,7 +13,7 @@
 }
 .head > div > a {
     text-decoration: none;
-    color: orange;
+    color: rgb(233,107,86);
   
 }
 .inside-head {
@@ -75,4 +75,89 @@ ul {
     list-style: none;
     padding:0 ;
     margin-left: 0;
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+#hfs > .hero {
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 2vw;
+    padding-top: 9vh;
+    padding-inline: 8vw;
+    padding-bottom: 9vh;
+}
+.hero > .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 2vw;
+    /* background-color: red; */
+    gap: 3vh;
+    padding: 7vh 2vw;
+    text-align: center;
+    border: rgba(128, 128, 128, 0.481) solid 1px;
+    border-radius: 5px;
+    color: rgb(85,84,85);    
+}
+.div1 >.box1 {
+    background-color: rgb(232,107,87);
+    padding: 2.3vh 1.3vw;
+    border-radius: 5px;
+    position: relative;
+}
+.box1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    width: 105%;
+    height: 110%;
+    background-color: rgba(232, 107, 87, 0.15);
+    border-radius: 12px;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.div1:hover {
+    background-color: rgb(233,107,86);
+    transition: color 1s ease-in-out ;
+}
+.div1:hover > .box1 {
+    background-color: white;
+    transition: color 1s  ease-in-out ;
+    
+}
+.box1 svg {
+    fill: white;
+    transition: fill 0.7s ease-in-out ; 
+}
+.div1:hover > .box1 svg {
+    fill: rgb(233,107,86);
+}
+.skills {
+    align-items: center;
+    color: rgb(85,84,85);
+}
+.skills > .h2 {
+    padding-bottom: 1.5vh;
+    position: relative;
+    padding-bottom: 3vh;
+    /* border-bottom:rgb(233,107,86) solid 5px ; */
+}
+.skills > .h2::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(232, 107, 87);
+    bottom: 0;
+    left: 40%;/*madertch 50% hit in all cases howa majaych lwst */
+    width: 40%;/*tolo*/
+    height: 3px;/*somk syalo*/
+    transform: translate(-18%);/* ghi ktn9s mn l lbdya dylo 18%*/
+}
+.skills p {
+    font-size: 17px;
 }
